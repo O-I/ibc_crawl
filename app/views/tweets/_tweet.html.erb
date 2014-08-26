@@ -1,0 +1,18 @@
+<div class='small-7 large-centered columns tweet' id='tweet-<%= tweet.id %>'>
+  <%= profile_pic tweet %>
+  <div class='tweet-content'>
+    <div class='tweet-header'>
+      <%= link_to_tweeter tweet %>&nbsp;&nbsp;
+      @<%= tweet.tweeter_screen_name %>&nbsp;&nbsp;
+      <%= link_to_tweet_id tweet %>
+    </div><br />
+    <div class='tweet-text'>
+      <%= text_to_true_link tweet.tweet_text %>
+    </div><br />
+    <div class='tweet-stats'>
+      ☆ <%=tweet.favorite_count %>
+      <span>&nbsp;&nbsp;&nbsp;</span>
+      ♲ <%=tweet.retweet_count %>
+    </div>
+  </div>
+</div><br />

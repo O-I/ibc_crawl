@@ -25,6 +25,8 @@ gem 'twitter'
 gem 'will_paginate',
 github: 'edariedl/will_paginate',
 branch: 'rename_select_for_count_method'
+# For prettying things up
+gem 'foundation-rails'
 
 group :development, :test do
   gem 'thin'

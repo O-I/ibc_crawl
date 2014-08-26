@@ -1,0 +1,91 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_self
+ *= require foundation_and_overrides
+ *= require_tree .
+ */
+
+html {
+  text-align: center;
+}
+
+body {   
+  background: #c7e0ed image-url('bg.png') no-repeat fixed top !important;
+  -webkit-font-smoothing: antialiased;
+}
+
+ul.hmenu {
+  list-style: none; 
+  margin: 0 0 2em;
+  padding: 0;
+}
+
+ul.hmenu li {
+  display: inline;  
+}
+
+#all-tweets {
+  text-align: left;
+  margin-top: 30px;
+}
+
+.tweet {
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 8px 0 8px 0;
+  background: rgba(252, 250, 225, .3)
+}
+
+.tweet:after {
+  content: '';
+  clear: both;
+  visibility: hidden;
+}
+
+.tweet-profile-pic {
+  float: left;
+  margin-right: 5px;
+}
+
+.tweet-content {
+  overflow: hidden;
+}
+
+.tweeter_link {
+  color: #222;
+  font-weight: normal;
+}
+
+.tweeter_link:hover {
+  color: #222;
+  text-decoration: underline;
+}
+
+.tweet_link {
+  color: #222;
+  font-style: italic;
+}
+
+.tweet_link:hover {
+  color: #222;
+  text-decoration: underline;
+}
+
+.tweet-text > a {
+  color: #222;
+}
+
+.tweet-text > a:hover {
+  color: #222;
+  text-decoration: underline;
+}

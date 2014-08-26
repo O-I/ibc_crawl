@@ -1,6 +1,6 @@
 module TweetsHelper
   def profile_pic(tweet)
-    image_tag tweet.tweeter_profile_image_url.to_s, class: 'fave-profile-pic'
+    image_tag tweet.tweeter_profile_image_url.to_s, class: 'tweet-profile-pic'
   end
 
   def link_to_tweeter(tweet)

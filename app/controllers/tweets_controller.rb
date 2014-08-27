@@ -1,6 +1,6 @@
 class TweetsController < ApplicationController
   def index
-    @tweets = Tweet.order(sort).page(params[:page])
+    @tweets = Tweet.search(params[:query]).order(sort).page(params[:page])
   end
 
   private

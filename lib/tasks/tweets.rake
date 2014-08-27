@@ -2,7 +2,7 @@ require_relative 'rake_helper'
 
 namespace :ibc do
   desc 'Get a web of tweets starting at the "origin"'
-  task crawl:, [:deg, :last_n] :environment do |t, args|
+  task :crawl, [:deg, :last_n] => :environment do |t, args|
     MAX = 200
     degree_of_separation = args[:deg] || 7
     n_tweets = args[:last_n] || 3

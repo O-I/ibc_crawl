@@ -18,6 +18,28 @@
 
 $(function(){ $(document).foundation(); });
 
+$(function() {
+  // Sortable links
+  var sortOptions = 'ul.left > li > a';
+  $(sortOptions).on('click', function() {
+    $(sortOptions).css({ background: '#333333' });
+    $(this).css({ background: '#f04124' });
+    $('#all-tweets').empty();
+    $('#query').val('');
+    $('.pagination').show().text('Rearranging...');
+    $.getScript(this.href);
+    return false;
+  });
+  // Search form
+  $('#tweets_search').submit(function() {
+    $('#all-tweets').empty();
+    $(sortOptions).css({ background: '#333333' });
+    $('.pagination').show().text('Searching...');
+    $.get(this.action, $(this).serialize(), null, 'script');
+    return false;
+  });
+});
+
 // Scroll to top arrow
 $(document).ready(function() {
   $(window).scroll(function() {

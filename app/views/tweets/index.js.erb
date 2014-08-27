@@ -1,0 +1,8 @@
+<% result = @tweets.empty? ? 'noresult': @tweets %>
+$('#all-tweets').append('<%= j render result %>');
+
+<% if @tweets.next_page %>
+  $('.pagination').replaceWith('<%= j will_paginate(@tweets) %>');
+<% else %>
+  $('.pagination').hide();
+<% end %>

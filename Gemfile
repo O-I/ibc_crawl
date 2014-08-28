@@ -21,6 +21,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'dotenv-rails'
 # For working with the Twitter API
 gem 'twitter'
+# For web scraping
+gem 'nokogiri'
 # For better working with PostgreSQL full text search
 gem 'pg_search'
 # For pagination

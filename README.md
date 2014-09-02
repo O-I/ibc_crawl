@@ -1,5 +1,7 @@
 # IBC Crawl
 
+[![Build Status](https://travis-ci.org/O-I/ibc_crawl.svg?branch=master)](https://travis-ci.org/O-I/ibc_crawl)
+
 Test crawling the ALS Ice Bucket Challenge phenomenon on Twitter.
 
 ## Motivation
